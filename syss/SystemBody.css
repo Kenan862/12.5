@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    min-width: 100%;
+    min-height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background: url("../sys_assets/boot.jpg") center / cover no-repeat;
+    flex-direction: column;
+}
+
+.boot_text{
+    color: #fff;
+    margin: 10px;
+}
+
+.boot_paragraph{
+    color: #fff;
+    margin: 15px;
+}
+
+.d-none{
+    display: none;
+}
