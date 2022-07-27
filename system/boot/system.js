@@ -1,3 +1,5 @@
+import { installer } from "./installer.js";
+
 function system() {
         {
             var unknown = '-';
@@ -205,9 +207,11 @@ function system() {
     
         $("main").empty().append(`
             <img id="osLogo" style="height:160px; transform:translateY(-150px); margin:180px" src="${osV}"/>
-            <img id="osLoader" style="height:50px;" src="${osL}"/>
-            <p class="textLoader" style="color:#fff; font-size:22px; position:absolute; bottom:11%;"></p>
+            <img id="osLoader" style="height:50px; margin:20px;" src="${osL}"/>
+            <p class="textLoader" style="color:#fff; font-size:22px;">Upgrading Windows</p>
         `);
+
+        load();
 
     }
 
@@ -217,20 +221,35 @@ function system() {
          $("main").empty().append(`
             <img id="osLoader" style="height:1000px;" src="${osL}"/>
         `);
+
+        load();
     }
     
- 
+    let main = $("main");
+    let osLogo = $("#osLogo");
+    let osLoader = $("#osLoader");
+    let textLoader= $(".textLoader");
+    osLogo.hide();
+    osLoader.hide();
+    textLoader.hide();
 
-
-    // let osLogo = $("#osLogo");
-
-    // osLogo.hide();
-
-    // setTimeout(() => {
-    //     $(".textLoader").text("Upgrading to Windows 12");
-    //     osLogo.show("fast");
-    // }, 2000);
+    setTimeout(() => {
+        osLogo.show();
+        osLoader.show();
+        textLoader.show();
+    }, 2000);
     
+    function load() {
+        setTimeout(() => {
+            osLogo.fadeOut(()=>{osLogo.remove()});
+            osLoader.fadeOut(()=>{osLoader.remove()});
+            textLoader.fadeOut(()=>{textLoader.remove()});
+            setTimeout(() => {
+                main.css("background","url('https://kenan862.github.io/12.5/sys_assets/boot.jpg') center / cover no-repeat");
+                installer();
+            }, 2000);
+        }, 10000);
+    }
 }
 
 export {

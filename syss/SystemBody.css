@@ -25,6 +25,7 @@ main{
     width: 100%;
     background: url("../sys_assets/boot.jpg") center / cover no-repeat;
     flex-direction: column;
+    cursor: none;
 }
 
 .boot_text{

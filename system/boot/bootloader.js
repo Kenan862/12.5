@@ -11,9 +11,9 @@ function bootloader(){
 
     <div id="boot">
         <ul class="options">
-            <li class="option option-default" id="Win12"><img src="https://kenan862.github.io/12.5/sys_assets/home.png"/>&nbsp;&nbsp;Windows 12 Installer</li>
+            <li class="option option-default" id="Win12"><img src="https://kenan862.github.io/12.5/sys_assets/home.png"/>&nbsp;&nbsp;Windows Installer</li>
             <li class="option" id="recovery"><img src="https://kenan862.github.io/12.5/sys_assets/recovery.png"/>&nbsp;&nbsp;Recovery Mode</li>
-            <li class="option" id="config"><img src="https://kenan862.github.io/12.5/sys_assets/recovery.png"/>&nbsp;&nbsp;Bootloader Config</li>
+            <li class="option" id="config"><img src="https://kenan862.github.io/12.5/sys_assets/recovery.png"/>&nbsp;&nbsp;Boot Config</li>
             <li class="option" id="power_off"><img src="https://kenan862.github.io/12.5/sys_assets/poweroff.png"/>&nbsp;&nbsp;Shut Down</li>
         </ul>
     </div>`);
@@ -61,8 +61,7 @@ function bootloader(){
         }else if(keycode < 0){
             keycode = 4;
         }
-    }
-    
+    } 
 
 }
 export{bootloader}
