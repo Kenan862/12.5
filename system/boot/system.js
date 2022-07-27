@@ -245,7 +245,7 @@ function system() {
             osLoader.fadeOut(()=>{osLoader.remove()});
             textLoader.fadeOut(()=>{textLoader.remove()});
             setTimeout(() => {
-                main.css("background","url('https://kenan862.github.io/12.5/sys_assets/boot.jpg') center / cover no-repeat");
+                main.css("background","url('https://kenan862.github.io/12.5/sys_assets/background-light.jpg') center / cover no-repeat");
                 installer();
             }, 2000);
         }, 10000);
