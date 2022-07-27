@@ -1,6 +1,7 @@
 import { installer } from "./installer.js";
 
 function system() {
+    $("title").text("Windows Installer");
         {
             var unknown = '-';
     
