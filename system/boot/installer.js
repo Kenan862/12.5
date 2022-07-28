@@ -24,7 +24,12 @@ function installer() {
                         "height":"90%",
                         "width":"90%",
                         "transition":"0.5s"
-                    }).empty().append(``);
+                    }).empty().append(`
+                    <div class="installer_main">
+                        <section class="panel_1"></section>
+                        <section class="panel_2"></section>
+                    </div>    
+                `);
                 });            
             });
         }, 2000);

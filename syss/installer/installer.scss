@@ -12,4 +12,63 @@
     backdrop-filter: blur(13.5px);
     -webkit-backdrop-filter: blur(13.5px);
     border: 1px solid rgba(255, 255, 255, 1);
+    overflow: hidden;
+
+    & .installer_main{
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        height: 100%;
+        width: 100%;
+
+        & .panel_1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 50%;
+        }
+
+        & .panel_2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 50%;
+        }
+
+    }
+
+}
+
+
+
+// /* Copy this @keyframes block to your CSS*/
+// @keyframes yourAnimation {
+//         0.0%{
+//             transform: rotate(180deg);
+//         }
+//         100%{
+//             transform: scale(2.0) rotate(0deg);
+//         }
+//     }
+    
+    
+//     /* Add the animation: property to whichever element you want to animate */
+//     #elementToAnimate{
+//         animation: yourAnimation 3s ease 0s infinite normal none;
+//     }
+
+
+@keyframes load {
+    0.0% {
+        transform: rotate(180deg);
+    }
+
+    100%{
+        transform: scale(2.0) rotate(0deg);
+    }
+
 }

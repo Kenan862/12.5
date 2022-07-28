@@ -12,4 +12,46 @@
   backdrop-filter: blur(13.5px);
   -webkit-backdrop-filter: blur(13.5px);
   border: 1px solid rgb(255, 255, 255);
+  overflow: hidden;
+}
+#installer .installer_main {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+}
+#installer .installer_main .panel_1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 50%;
+}
+#installer .installer_main .panel_2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 50%;
+}
+
+@-webkit-keyframes load {
+  0.0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: scale(2) rotate(0deg);
+  }
+}
+
+@keyframes load {
+  0.0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: scale(2) rotate(0deg);
+  }
 }/*# sourceMappingURL=installer.css.map */
