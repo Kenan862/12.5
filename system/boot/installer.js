@@ -24,7 +24,7 @@ function installer() {
                         "height":"90%",
                         "width":"90%",
                         "transition":"0.5s"
-                    });
+                    }).empty().append(``);
                 });            
             });
         }, 2000);
