@@ -23,7 +23,7 @@ main{
     justify-content: center;
     height: 100%;
     width: 100%;
-    background: url("../sys_assets/boot.jpg") center / cover no-repeat;
+    background: url("https://raw.githubusercontent.com/Kenan862/System-Assets/main/boot.jpg?token=GHSAT0AAAAAABVOKKD3C5AOKL4KOR32Y6YOYXCBMVA") center / cover no-repeat;
     flex-direction: column;
     cursor: none;
 }
