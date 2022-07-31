@@ -1,0 +1,334 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.active_main .desktop {
+  height: 95%;
+  width: 100%;
+}
+.active_main .taskbar_area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 5%;
+  width: 100%;
+  transform: translateY(-5px);
+}
+.active_main .taskbar_area .taskbar_1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  height: 100%;
+  width: 10%;
+  background: rgba(255, 255, 255, 0.715);
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.active_main .taskbar_area .taskbar_2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 80%;
+  background: rgba(255, 255, 255, 0.715);
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.active_main .taskbar_area .taskbar_3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  height: 100%;
+  width: 10%;
+  background: rgba(255, 255, 255, 0.715);
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.active_main .taskbar_area .taskbar_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  margin: 5px;
+  height: 30px;
+  width: 30px;
+}
+.active_main .taskbar_area .taskbar_btn:hover {
+  background: rgba(255, 255, 255, 0.88);
+  transition: 0.2s;
+}
+.active_main .taskbar_area .taskbar_btn:not(:hover) {
+  transition: 0.2s;
+}
+.active_main .taskbar_area #start_btn {
+  content: url("https://raw.githubusercontent.com/Kenan862/System-Assets/main/home2.png");
+  padding: 5px;
+}
+.active_main .taskbar_area #search_btn {
+  content: url("https://raw.githubusercontent.com/Kenan862/System-Assets/main/search.png");
+  padding: 5px;
+}
+.active_main .taskbar_area #task_view_btn {
+  content: url("https://raw.githubusercontent.com/Kenan862/System-Assets/main/taskview.png");
+  padding: 5px;
+}
+.active_main .taskbar_area #file_explorer_btn {
+  content: url("https://raw.githubusercontent.com/Kenan862/System-Assets/main/files.png");
+  padding: 3px;
+}
+.active_main .taskbar_area #microsoft_edge_btn {
+  content: url("https://raw.githubusercontent.com/Kenan862/System-Assets/main/edge.png");
+  padding: 3px;
+}
+.active_main .taskbar_area #microsoft_store_btn {
+  content: url("https://raw.githubusercontent.com/Kenan862/System-Assets/main/store.png");
+  padding: 3px;
+}
+.active_main .taskbar_area #microsoft_defender_btn {
+  content: url("https://raw.githubusercontent.com/Kenan862/System-Assets/main/security.png");
+  padding: 3px;
+}
+.active_main .taskbar_area #microsoft_settings_btn {
+  content: url("https://raw.githubusercontent.com/Kenan862/System-Assets/main/settings.png");
+  padding: 3px;
+}
+.active_main .taskbar_area #more_options_btn {
+  font-size: 22px;
+}
+.active_main .notification {
+  overflow: hidden;
+  position: absolute;
+  border-radius: 10px;
+  left: 79.5%;
+  bottom: 7%;
+  height: 100px;
+  width: 255px;
+  background: rgba(255, 255, 255, 0.715);
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.active_main .notification:hover {
+  width: 260px;
+  height: 105px;
+  left: 78.5%;
+  transition: 0.5s;
+}
+.active_main .notification:not(:hover) {
+  transition: 0.5s;
+}
+.active_main .ms_edge_window, .active_main .explorer_window, .active_main .ms_store_window, .active_main .ms_security_window, .active_main .ms_settings_window {
+  top: 10%;
+}
+.active_main #search_field {
+  position: absolute;
+  width: 900px;
+  height: 500px;
+  background: rgba(255, 255, 255, 0.715);
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  flex-direction: column;
+  top: 34.5%;
+  left: -10%;
+  border-radius: 16px;
+  overflow: hidden;
+  transform: scale(0.7, 0.7);
+  /* здесь начинается верх */
+  /* заканчивается верх */
+}
+.active_main #search_field header {
+  width: 100%;
+  height: 70px;
+  background: linear-gradient(to right, #c9d6ff, #e2e2e2);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: flex;
+}
+.active_main #search_field header section {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.active_main #search_field header section p {
+  color: #7c7c7c;
+  font-size: 1rem;
+  cursor: pointer;
+  display: block;
+}
+.active_main #search_field header section p:hover {
+  font-weight: bolder;
+  color: #000;
+  transition: 0.5s;
+}
+.active_main #search_field header section p:not(:hover) {
+  transition: 0.5s;
+}
+.active_main #search_field header section:nth-child(2) {
+  height: 100%;
+  width: 40%;
+  display: flex;
+}
+.active_main #search_field header section:nth-child(2) .profile {
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.3843137255);
+  margin-left: 200px;
+  border-radius: 100%;
+  font-size: 1.5rem;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.active_main #search_field article {
+  width: 100%;
+  height: 70%;
+  display: flex;
+}
+.active_main #search_field article section:first-child {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.active_main #search_field article section:first-child p:first-child {
+  font-size: 1.3rem;
+  margin: 20px;
+}
+.active_main #search_field article section:first-child div {
+  width: 100%;
+  height: 90%;
+  background: #ffffff;
+  font-size: 4rem;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.active_main #search_field article nav {
+  width: 40%;
+  height: 50%;
+  background: #000;
+  margin: 100px 0px 0px 50px;
+  color: #fff;
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.active_main #search_field footer {
+  width: 100%;
+  height: 31%;
+  display: flex;
+  align-items: end;
+}
+.active_main #search_field footer form {
+  width: 100%;
+  padding: 5px;
+}
+.active_main #search_field footer .group {
+  display: flex;
+  line-height: 28px;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+.active_main #search_field footer .input {
+  width: 100%;
+  height: 40px;
+  line-height: 28px;
+  padding: 0 1rem;
+  padding-left: 2.5rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  background-color: #f3f3f4;
+  color: #0d0c22;
+  transition: 0.3s ease;
+}
+.active_main #search_field footer .input::-moz-placeholder {
+  color: #9e9ea7;
+}
+.active_main #search_field footer .input:-ms-input-placeholder {
+  color: #9e9ea7;
+}
+.active_main #search_field footer .input::placeholder {
+  color: #9e9ea7;
+}
+.active_main #search_field footer .input:focus,
+.active_main #search_field footer input:hover {
+  outline: none;
+  border-color: rgba(76, 174, 234, 0.4);
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgba(76, 176, 234, 0.1);
+}
+.active_main #search_field footer .icon {
+  position: absolute;
+  left: 1rem;
+  fill: #9e9ea7;
+  width: 1rem;
+  height: 1rem;
+}
+.active_main .ms_store_window .ms_store_window_rightpart {
+  width: 85%;
+}
+.active_main .ms_store_window .ms_store_window_rightpart .ms_store_window_rightpart_downpart_adblocks_parent {
+  transform: translateY(-45px);
+}
+.active_main .ms_store_window .ms_store_window_rightpart .ms_store_window_rightpart_downpart_adblocks_parent .ms_store_window_rightpart_downpart_adblocks {
+  border: 2px solid #fff;
+  width: 90px;
+  height: 90px;
+  border-radius: 5px;
+}
+.active_main .ms_store_window .ms_store_window_rightpart .ms_store_window_rightpart_downpart_adblocks_parent .ms_store_window_rightpart_downpart_adblocks:hover {
+  border: 2px solid #0EA2FF;
+  transition: 0.3s;
+}
+.active_main .ms_store_window .ms_store_window_rightpart .ms_store_window_rightpart_downpart_adblocks_parent .ms_store_window_rightpart_downpart_adblocks:not(:hover) {
+  transition: 0.5s;
+}
+.active_main .ms_store_window #home:hover,
+.active_main .ms_store_window #apps:hover,
+.active_main .ms_store_window #games:hover,
+.active_main .ms_store_window #movies:hover,
+.active_main .ms_store_window #info:hover {
+  background: rgb(41, 162, 255);
+  transition: 0.5s;
+}
+.active_main .ms_store_window #home:not(:hover),
+.active_main .ms_store_window #apps:not(:hover),
+.active_main .ms_store_window #games:not(:hover),
+.active_main .ms_store_window #movies:not(:hover),
+.active_main .ms_store_window #info:not(:hover) {
+  transition: 0.5s;
+}
+.active_main .start_menu {
+  background: rgba(255, 255, 255, 0.715);
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.active_main .edge_active {
+  height: 100%;
+  width: 100%;
+  transition: 0.5s;
+}/*# sourceMappingURL=style.css.map */

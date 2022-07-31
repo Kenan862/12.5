@@ -28,7 +28,7 @@
             align-items: center;
             justify-content: center;
             height: 100%;
-            width: 50%;
+            width: 40%;
         }
 
         & .panel_2{
@@ -36,7 +36,23 @@
             align-items: center;
             justify-content: center;
             height: 100%;
-            width: 50%;
+            width: 60%;
+        }
+
+        .opt{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .opt:hover{
+            background: #66c0b7;
+            color: #fff;
+            transition: 0.5s;
+        }
+
+        .opt:not(:hover){
+            transition: 0.5s;
         }
 
     }
@@ -60,15 +76,3 @@
 //     #elementToAnimate{
 //         animation: yourAnimation 3s ease 0s infinite normal none;
 //     }
-
-
-@keyframes load {
-    0.0% {
-        transform: rotate(180deg);
-    }
-
-    100%{
-        transform: scale(2.0) rotate(0deg);
-    }
-
-}

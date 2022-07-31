@@ -28,30 +28,25 @@
   align-items: center;
   justify-content: center;
   height: 100%;
-  width: 50%;
+  width: 40%;
 }
 #installer .installer_main .panel_2 {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
-  width: 50%;
+  width: 60%;
 }
-
-@-webkit-keyframes load {
-  0.0% {
-    transform: rotate(180deg);
-  }
-  100% {
-    transform: scale(2) rotate(0deg);
-  }
+#installer .installer_main .opt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-@keyframes load {
-  0.0% {
-    transform: rotate(180deg);
-  }
-  100% {
-    transform: scale(2) rotate(0deg);
-  }
+#installer .installer_main .opt:hover {
+  background: #66c0b7;
+  color: #fff;
+  transition: 0.5s;
+}
+#installer .installer_main .opt:not(:hover) {
+  transition: 0.5s;
 }/*# sourceMappingURL=installer.css.map */
