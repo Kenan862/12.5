@@ -6,12 +6,12 @@ import { system } from "./system.js";
 function bootloader(){
 
     $("main").append(`
-    <h1 class="boot_text">SysBoot v1.0</h1>
+    <h1 class="boot_text">SysBoot v2.0</h1>
     <p class="boot_paragraph">Choose a boot option</p>
 
     <div id="boot">
         <ul class="options">
-            <li class="option option-default" id="Win12"><img src="https://kenan862.github.io/12.5/sys_assets/home.png"/>&nbsp;&nbsp;Windows Installer</li>
+            <li class="option option-default" id="Win12"><img src="https://kenan862.github.io/12.5/sys_assets/home.png"/>&nbsp;&nbsp;Windows</li>
             <li class="option" id="recovery"><img src="https://kenan862.github.io/12.5/sys_assets/recovery.png"/>&nbsp;&nbsp;Recovery Mode</li>
             <li class="option" id="config"><img src="https://kenan862.github.io/12.5/sys_assets/recovery.png"/>&nbsp;&nbsp;Boot Config</li>
             <li class="option" id="power_off"><img src="https://kenan862.github.io/12.5/sys_assets/poweroff.png"/>&nbsp;&nbsp;Shut Down</li>
